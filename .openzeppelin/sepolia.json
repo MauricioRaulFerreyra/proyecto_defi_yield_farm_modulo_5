@@ -1,0 +1,344 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xFa011DA5464EA100DC65337d483c7518199c2196",
+      "txHash": "0xb0f99710d71499f52912fcd2854fb5289b9a2c25664f4ea05de19eb2e81bb58b",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "16d2cde8d1d9bd49b5fd8084ef4fe301f0945a0ccd7a39b41742638149c4f542": {
+      "address": "0xdb74B94fAAaE928FCB9741112A82847dB5146eFd",
+      "txHash": "0xc06cd30d4ff988cfce277144148a4ebb8dfa4f2a2856b56c0997dcfbee4223e7",
+      "layout": {
+        "solcVersion": "0.8.28",
+        "storage": [
+          {
+            "label": "farmState",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_enum(FarmState)2763",
+            "contract": "TokenFarm",
+            "src": "contracts\\TokenFarm.sol:54"
+          },
+          {
+            "label": "dappToken",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_contract(DappToken)2630",
+            "contract": "TokenFarm",
+            "src": "contracts\\TokenFarm.sol:56"
+          },
+          {
+            "label": "lpToken",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(LPToken)2669",
+            "contract": "TokenFarm",
+            "src": "contracts\\TokenFarm.sol:57"
+          },
+          {
+            "label": "rewardStrategy",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(IRewardStrategy)2781",
+            "contract": "TokenFarm",
+            "src": "contracts\\TokenFarm.sol:58"
+          },
+          {
+            "label": "rewardConfig",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_struct(RewardConfig)2881_storage",
+            "contract": "TokenFarm",
+            "src": "contracts\\TokenFarm.sol:68"
+          },
+          {
+            "label": "totalStakingBalance",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_uint256",
+            "contract": "TokenFarm",
+            "src": "contracts\\TokenFarm.sol:69"
+          },
+          {
+            "label": "collectedFees",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_uint256",
+            "contract": "TokenFarm",
+            "src": "contracts\\TokenFarm.sol:70"
+          },
+          {
+            "label": "totalRewardsDistributed",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_uint256",
+            "contract": "TokenFarm",
+            "src": "contracts\\TokenFarm.sol:71"
+          },
+          {
+            "label": "farmStartBlock",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_uint256",
+            "contract": "TokenFarm",
+            "src": "contracts\\TokenFarm.sol:72"
+          },
+          {
+            "label": "stakers",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "TokenFarm",
+            "src": "contracts\\TokenFarm.sol:85"
+          },
+          {
+            "label": "stakersData",
+            "offset": 0,
+            "slot": "12",
+            "type": "t_mapping(t_address,t_struct(Staker)2907_storage)",
+            "contract": "TokenFarm",
+            "src": "contracts\\TokenFarm.sol:86"
+          },
+          {
+            "label": "stakerIndex",
+            "offset": 0,
+            "slot": "13",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "TokenFarm",
+            "src": "contracts\\TokenFarm.sol:87"
+          },
+          {
+            "label": "lockPeriod",
+            "offset": 0,
+            "slot": "14",
+            "type": "t_uint256",
+            "contract": "TokenFarm",
+            "src": "contracts\\TokenFarm.sol:93"
+          },
+          {
+            "label": "emergencyWithdrawEnabled",
+            "offset": 0,
+            "slot": "15",
+            "type": "t_bool",
+            "contract": "TokenFarm",
+            "src": "contracts\\TokenFarm.sol:94"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)73_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)161_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(DappToken)2630": {
+            "label": "contract DappToken",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IRewardStrategy)2781": {
+            "label": "contract IRewardStrategy",
+            "numberOfBytes": "20"
+          },
+          "t_contract(LPToken)2669": {
+            "label": "contract LPToken",
+            "numberOfBytes": "20"
+          },
+          "t_enum(FarmState)2763": {
+            "label": "enum FarmState",
+            "members": [
+              "ACTIVE",
+              "PAUSED",
+              "EMERGENCY_STOP"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_struct(Staker)2907_storage)": {
+            "label": "mapping(address => struct TokenFarm.Staker)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(RewardConfig)2881_storage": {
+            "label": "struct TokenFarm.RewardConfig",
+            "members": [
+              {
+                "label": "minPerBlock",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "maxPerBlock",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "feePercent",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "lastUpdate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(Staker)2907_storage": {
+            "label": "struct TokenFarm.Staker",
+            "members": [
+              {
+                "label": "balance",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "checkpoint",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "pendingRewards",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "totalClaimed",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "depositTimestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "hasStaked",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "isStaking",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

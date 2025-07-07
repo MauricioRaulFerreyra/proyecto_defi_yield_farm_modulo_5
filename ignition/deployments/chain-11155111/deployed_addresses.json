@@ -1,0 +1,9 @@
+{
+  "TokenFarmProxy#ProxyAdmin_At": "0x24E2fCcb3d73B1268F248a9C4c0582af0aF51d2e",
+  "TokenFarmProxy#TokenFarm_Implementation_At": "0xdb74B94fAAaE928FCB9741112A82847dB5146eFd",
+  "TokenFarmProxy#TokenFarm_Proxy_At": "0xFa011DA5464EA100DC65337d483c7518199c2196",
+  "TokenFarmProxy#TransparentProxy_At": "0xFa011DA5464EA100DC65337d483c7518199c2196",
+  "TokenFarmUpgrade#TokenFarmV2_Implementation": "0x1C54dD7f47d3f72e72666Ee09761bcD97eF96703",
+  "TokenFarmUpgrade#ProxyAdmin_WithAbi": "0x24E2fCcb3d73B1268F248a9C4c0582af0aF51d2e",
+  "TokenFarmUpgrade#TokenFarmV2_ProxyInterface": "0xFa011DA5464EA100DC65337d483c7518199c2196"
+}
